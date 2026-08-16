@@ -293,15 +293,15 @@
     <section class="clause">
       <div class="clause-num">01</div>
       <h2><span class="ko">수집하는 개인정보</span><span class="en">Information We Collect</span></h2>
-      <p class="ko">본 앱은 사용자의 개인정보를 수집하지 않습니다. 사용자가 입력하는 시간표 데이터(과목명, 수업 시간, 학급 정보 등)는 사용자의 기기 내부에만 저장되며, 외부 서버로 전송되지 않습니다. 사용자가 별도로 Google Drive 동기화를 켠 경우에만 이 데이터가 사용자 본인의 Google 계정 안에도 저장됩니다 (자세한 내용은 3항 참고).</p>
-      <p class="en">This app does not collect any personal information. Timetable data entered by the user (subject names, class times, class labels, etc.) is stored only on the user's device and is never transmitted to external servers. Only if the user turns on Google Drive sync is that data also stored in the user's own Google account (see Section 3).</p>
+      <p class="ko">본 앱은 사용자의 개인정보를 수집하지 않습니다. 사용자가 입력하는 시간표 데이터(과목명, 수업 시간, 학급 정보 등)는 사용자의 기기 내부에만 저장되며, 외부 서버로 전송되지 않습니다.</p>
+      <p class="en">This app does not collect any personal information. Timetable data entered by the user (subject names, class times, class labels, etc.) is stored only on the user's device and is never transmitted to external servers.</p>
     </section>
 
     <section class="clause">
       <div class="clause-num">02</div>
       <h2><span class="ko">데이터 저장 방식</span><span class="en">Data Storage</span></h2>
-      <p class="ko">모든 데이터는 기기 내부 저장소에 저장되며, 인터넷 연결 없이도 앱을 완전히 사용할 수 있습니다. Google Drive 동기화를 켠 경우에는 같은 데이터가 사용자 본인의 Google Drive 계정에도 저장됩니다. 앱을 삭제하면 기기에 저장된 데이터는 함께 삭제되며, Drive에 저장해둔 백업본은 사용자가 Drive에서 직접 삭제하기 전까지 사용자 본인의 계정에 남아있습니다.</p>
-      <p class="en">All data is stored in local storage on the user's device, and the app works fully offline. If the user enables Google Drive sync, the same data is also stored in the user's own Google Drive account. Deleting the app removes the locally stored data; any backup already saved to Drive remains in the user's own account until the user deletes it there directly.</p>
+      <p class="ko">모든 데이터는 기기 내부 저장소에만 저장되며, 인터넷 연결 없이도 앱을 완전히 사용할 수 있습니다. 앱을 삭제하면 기기에 저장된 데이터도 함께 삭제됩니다. 기기를 바꾸거나 백업이 필요할 땐 앱 내 "백업 내보내기/가져오기" 기능으로 JSON 파일을 직접 저장·이동할 수 있습니다.</p>
+      <p class="en">All data is stored only in local storage on the user's device, and the app works fully offline. Deleting the app also removes the locally stored data. To move data to a new device or keep a backup, the app provides an in-app "export/import backup" feature that saves and moves a JSON file directly.</p>
     </section>
 
     <section class="clause">
@@ -327,22 +327,6 @@
         <p class="ko"><strong>목적:</strong> 시간표를 이미지로 갤러리에 저장하는 기능에 사용됩니다. Android 10 이상에서는 이 권한 없이 시스템 갤러리 저장 기능으로 동작하며, 그보다 오래된 기기에서만 요청됩니다. 이미지 저장 기능을 쓸 때만 요청되고, 거부해도 기본 기능에는 영향이 없습니다.</p>
         <p class="en"><strong>Purpose:</strong> used to save the timetable as an image to the photo gallery. On Android 10+ this works through the system's gallery-saving mechanism without this permission; it is requested only on older devices, and only when the image-export feature is used. Denying it does not affect core functionality.</p>
       </div>
-
-      <div class="sub">
-        <h3><span class="mono">3.4</span><span class="ko">인터넷</span><span class="en">Internet</span></h3>
-        <p class="ko"><strong>목적:</strong> Google Drive 동기화 기능을 사용할 때만 통신이 발생합니다. 이 기능을 쓰지 않으면 앱은 어떤 네트워크 통신도 하지 않습니다.</p>
-        <p class="en"><strong>Purpose:</strong> network access occurs only when using Google Drive sync. If this feature is not used, the app makes no network requests at all.</p>
-      </div>
-
-      <div class="sub">
-        <h3><span class="mono">3.5</span><span class="ko">Google Drive 저장 및 동기화 (선택 기능)</span><span class="en">Google Drive storage &amp; sync (optional)</span></h3>
-        <p class="ko"><strong>목적:</strong> 사용자가 입력한 시간표 데이터를 여러 기기 간에 동기화하기 위해, 사용자 본인의 Google Drive 계정에 백업합니다.</p>
-        <p class="ko"><strong>저장 데이터:</strong> 과목명, 수업 시간, 학급 정보 등 사용자가 직접 입력한 시간표 데이터, 그리고 연동된 Google 계정의 이메일 주소(어떤 계정과 연동돼 있는지 화면에 보여주기 위해 기기에만 저장됩니다).</p>
-        <p class="ko">앱은 사용자 본인의 Drive 안에서도 다른 파일과 분리된 앱 전용 숨김 공간(App Data 폴더)에만 접근하며, 이 폴더는 사용자의 Drive 화면에 노출되지 않고 다른 앱도 접근할 수 없습니다. 이 데이터는 제3자와 공유되지 않으며, 동기화를 끄면 이후로는 기기 내부 저장소만 사용됩니다.</p>
-        <p class="en"><strong>Purpose:</strong> backs up the user's timetable data to their own Google Drive account so it can sync across devices.</p>
-        <p class="en"><strong>Data stored:</strong> subject names, class times, class labels and other timetable data entered by the user, plus the email address of the connected Google account (kept on-device only, to show which account is linked).</p>
-        <p class="en">The app only accesses a hidden, app-specific space within the user's own Drive (the App Data folder), separate from the user's other files; it is not visible in the user's Drive and cannot be accessed by other apps. This data is never shared with third parties. Turning sync off means only local device storage is used from then on.</p>
-      </div>
     </section>
 
     <section class="clause">
@@ -361,27 +345,20 @@
 
     <section class="clause">
       <div class="clause-num">06</div>
-      <h2><span class="ko">Google 사용자 데이터 정책 준수</span><span class="en">Compliance with Google's User Data Policy</span></h2>
-      <p class="ko">onTime의 Google Drive 연동 기능은 <a class="inline-link" href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API 서비스 사용자 데이터 정책</a>을 준수하며, 이 정책에 명시된 제한된 사용(Limited Use) 요건을 따릅니다. Google 계정을 통해 얻은 정보는 본 방침에 설명된 시간표 동기화 기능을 제공하는 용도로만 사용됩니다.</p>
-      <p class="en">onTime's Google Drive integration complies with the <a class="inline-link" href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including its Limited Use requirements. Information obtained through the user's Google Account is used only to provide the timetable sync feature described in this policy.</p>
-    </section>
-
-    <section class="clause">
-      <div class="clause-num">07</div>
       <h2><span class="ko">아동 개인정보 보호</span><span class="en">Children's Privacy</span></h2>
       <p class="ko">본 앱은 만 14세 미만 아동으로부터 개인정보를 의도적으로 수집하지 않습니다.</p>
       <p class="en">This app does not knowingly collect personal information from children under the age of 13.</p>
     </section>
 
     <section class="clause">
-      <div class="clause-num">08</div>
+      <div class="clause-num">07</div>
       <h2><span class="ko">개인정보처리방침 변경</span><span class="en">Changes to This Policy</span></h2>
       <p class="ko">본 방침이 변경될 경우, 앱 업데이트를 통해 공지합니다.</p>
       <p class="en">Any changes to this privacy policy will be communicated through app updates.</p>
     </section>
 
     <section class="clause">
-      <div class="clause-num">09</div>
+      <div class="clause-num">08</div>
       <h2><span class="ko">문의</span><span class="en">Contact</span></h2>
       <p class="ko">개인정보 처리와 관련한 문의사항은 아래 이메일로 연락해 주세요.<br>이메일: <a class="inline-link" href="mailto:ssolsday@gmail.com">ssolsday@gmail.com</a></p>
       <p class="en">For any questions regarding this privacy policy, please contact:<br>Email: <a class="inline-link" href="mailto:ssolsday@gmail.com">ssolsday@gmail.com</a></p>
